@@ -1,0 +1,15 @@
+extends base.pug
+
+block content
+	form(action="/submit-form-with-post", method="post")
+		label(for="HKID") HKID Number
+		input(type="text", name="hkid")
+		p
+		label(for="Account") Bank Account
+		input(type="text", name="account")
+		p
+		label(for="Mobile") Mobile Number
+		input(type="text", name="mobile")
+		p
+		label(for="Submit") Press to submit
+		input(type="submit", value="Confirm")
